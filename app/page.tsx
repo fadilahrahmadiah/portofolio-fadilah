@@ -182,7 +182,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* EXPERIENCE / TIMELINE SECTION */}
       <section className={styles.section}>
         <div className="max-w-6xl mx-auto space-y-10">
           <div className="space-y-2">
@@ -246,7 +245,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-
+      
       <section className={styles.section}>
         <div className="max-w-6xl mx-auto space-y-6">
           <div className="space-y-2">
@@ -380,7 +379,6 @@ export default function Home() {
       <footer className="w-full py-12 text-center text-xs text-slate-400 bg-white border-t border-slate-100">
         <p>© {new Date().getFullYear()} Fadilah Rahmadiah. Built natively using Next.js & Pure CSS Modules.</p>
       </footer>
-
     </main>
   );
 }

@@ -14,7 +14,10 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Fadilah Rahmadiah Portfolio | AI & Data Analytics",
-  description: "Official portfolio of Fadilah Rahmadiah, an Informatics Engineering student at Sriwijaya University. Experienced as an AI & Data Analytics Intern at PT Timah Tbk, specializing in Artificial Intelligence and Intelligent Systems.",
+  description: "Official portfolio of Fadilah Rahmadiah, an Informatics Engineering student at Sriwijaya University (UNSRI). Experienced as an AI & Data Analytics Intern at PT Timah Tbk, specializing in Artificial Intelligence and Intelligent Systems.",
+  verification: {
+    google: "ak9bi8ByE97RMkMtaFv1pReQ-wXcAIrklGH065S0NMY",
+  },
 };
 
 export default function RootLayout({

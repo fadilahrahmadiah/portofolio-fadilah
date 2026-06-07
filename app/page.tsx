@@ -7,6 +7,9 @@ import { FaLinkedin, FaGithub, FaWhatsapp } from "react-icons/fa6";
 export const metadata ={
   title: "Fadilah Rahmadiah Portfolio | AI & Data Analytics",
   description: "Official portfolio of Fadilah Rahmadiah, an Informatics Engineering student at Sriwijaya University. Experienced as an AI & Data Analytics Intern at PT Timah Tbk, specializing in Artificial Intelligence and Intelligent Systems.",
+  verification: {
+    google: "ak9bi8ByE97RMkMtaFv1pReQ-wXcAIrklGH065S0NMY",
+  },
 };
 
 export default function Home() {

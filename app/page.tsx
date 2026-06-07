@@ -4,6 +4,11 @@ import styles from './Home.module.css';
 import {IoMailOutline} from 'react-icons/io5';  
 import { FaLinkedin, FaGithub, FaWhatsapp } from "react-icons/fa6"; 
 
+export const metadata ={
+  title: "Fadilah Rahmadiah Portfolio | AI & Data Analytics",
+  description: "Official portfolio of Fadilah Rahmadiah, an Informatics Engineering student at Sriwijaya University. Experienced as an AI & Data Analytics Intern at PT Timah Tbk, specializing in Artificial Intelligence and Intelligent Systems.",
+};
+
 export default function Home() {
   return (
     <main className={styles.mainContainer}>

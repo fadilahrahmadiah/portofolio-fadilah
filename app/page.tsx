@@ -12,6 +12,41 @@ export const metadata ={
   },
 };
 
+const projectsData = [
+  {
+    id: 1,
+    title: "AI-Powered Tin Price Forecasting Website",
+    description: "Developed an AI-based time series forecasting model integrated into a web system to predict tin commodity prices for PT Timah Tbk, supporting data-driven predictive modeling and strategic market analysis.",
+    image: "/projects/tin-forecasting.png",
+    tech: ["Artificial Intelligence (AI)", "Programming", "Time Series", "Next.js"],
+    // link: "https://github.com/fadilahrahmadiah" 
+  },
+  {
+    id: 2,
+    title: "Hybrid Deep Learning Sentiment Analysis Platform",
+    description: "Built a sophisticated sentiment analysis engine leveraging a hybrid architecture of MLP and LSTM to capture contextual nuances in reviews, seamlessly integrated with a modern Next.js frontend for real-time inference.",
+    image: "/projects/sentiment_analysis.png", 
+    tech: ["Artificial Intelligence (AI)", "Deep Learning (LSTM/MLP)", "Next.js"],
+    link: "https://imdb-sentiment-frontend-pearl.vercel.app/"
+  },
+  {
+    id: 3,
+    title: "Predictive Modeling for Cardiovascular Health",
+    description: "Developed an end-to-end risk prediction system utilizing a Random Forest Classifier (97.30% accuracy) with a robust data preprocessing pipeline and a user-friendly Streamlit diagnostic dashboard.",
+    image: "/projects/cardiovasc.png",
+    tech: ["Python", "Machine Learning", "Streamlit Dashboard", "Data Pipeline"],
+    link: "https://heart-disease-prediction-tp4fnjjavwfxej9fugwjze.streamlit.app/?"
+  },
+  {
+    id: 4,
+    title: "Real-time Facial Feature Detection (YOLOv8 + ONNX)",
+    description: "Engineered a high-performance facial feature detection system (face, eyes, nose, lips) using YOLOv8, optimized for low-latency browser inference via ONNX Runtime Web inside a Next.js application.",
+    image: "/projects/face_detect.png",
+    tech: ["Artificial Intelligence (AI)", "YOLOv8", "ONNX Runtime", "Computer Vision"],
+    link: "https://yolov8-face-detection-web-jycv.vercel.app/"
+  },
+];
+
 export default function Home() {
   return (
     <main className={styles.mainContainer}>
@@ -48,7 +83,7 @@ export default function Home() {
               Fadilah Rahmadiah's Portfolio
             </h1>
             <p className="text-lg md:text-xl text-slate-600 leading-relaxed">
-              Informatics Engineering student at <span className="text-slate-900 font-semibold">Sriwijaya University</span> specializing in Artificial Intelligence and Intelligent Systems. Experienced in data preprocessing, machine learning development, and robust model evaluation.
+              Informatics Engineering student at <span className="text-slate-900 font-semibold">Sriwijaya University</span> specializing in Artificial Intelligence and Intelligent Systems. Experienced in data preprocessing, artificial intelligence development, and robust model evaluation.
             </p>
             <div className="flex flex-wrap gap-4 pt-2 justify-center md:justify-start">
               <a href="mailto:rahmadiahfadilah@gmail.com" className={styles.btnPrimary}>
@@ -123,56 +158,12 @@ export default function Home() {
 
             <div className={`${styles.card} min-w-[280px] sm:min-w-[350px] max-w-[350px] snap-start p-0 overflow-hidden flex flex-col`}>
               <div className="relative w-full h-48 bg-slate-100 overflow-hidden">
-                <Image src="/certificates/hmif.png" alt="Certificate" fill className="object-fill" />
-              </div>
-              <div className="p-5 space-y-1 flex-1">
-                <span className={`${styles.badge} ${styles.badgeTeal}`}>Leadership & Organization</span>
-                <h4 className="text-base font-bold text-slate-800 line-clamp-1">Entrepreneurship Staff</h4>
-                <p className="text-xs text-slate-500">Himpunan Mahasiswa Informatika (HMIF) UNSRI 2024</p>
-              </div>
-            </div>
-
-            <div className={`${styles.card} min-w-[280px] sm:min-w-[350px] max-w-[350px] snap-start p-0 overflow-hidden flex flex-col`}>
-              <div className="relative w-full h-48 bg-slate-100 overflow-hidden">
                 <Image src="/certificates/temanmengabdi.png" alt="Sertifikat" fill className="object-fill" />
               </div>
               <div className="p-5 space-y-1 flex-1">
                 <span className={`${styles.badge} ${styles.badgeEmerald}`}>Volunteering</span>
                 <h4 className="text-base font-bold text-slate-800 line-clamp-1">Part of Teman Mengabdi 2025</h4>
                 <p className="text-xs text-slate-500">Yayasan TEACH Indonesia</p>
-              </div>
-            </div>
-
-            <div className={`${styles.card} min-w-[280px] sm:min-w-[350px] max-w-[350px] snap-start p-0 overflow-hidden flex flex-col`}>
-              <div className="relative w-full h-48 bg-slate-100 overflow-hidden">
-                <Image src="/certificates/wya.png" alt="Sertifikat" fill className="object-fill" />
-              </div>
-              <div className="p-5 space-y-1 flex-1">
-                <span className={`${styles.badge} ${styles.badgeEmerald}`}>Volunteering</span>
-                <h4 className="text-base font-bold text-slate-800 line-clamp-1">Volunteer Group Lead</h4>
-                <p className="text-xs text-slate-500">Issued by World Youth Action</p>
-              </div>
-            </div>
-
-            <div className={`${styles.card} min-w-[280px] sm:min-w-[350px] max-w-[350px] snap-start p-0 overflow-hidden flex flex-col`}>
-              <div className="relative w-full h-48 bg-slate-100 overflow-hidden">
-                <Image src="/certificates/ief.png" alt="Sertifikat" fill className="object-fill" />
-              </div>
-              <div className="p-5 space-y-1 flex-1">
-                <span className={`${styles.badge} ${styles.badgeEmerald}`}>Volunteering</span>
-                <h4 className="text-base font-bold text-slate-800 line-clamp-1">Design Staff Volunteer</h4>
-                <p className="text-xs text-slate-500">Issued by Ilkom's Community of English Lover</p>
-              </div>
-            </div>
-
-            <div className={`${styles.card} min-w-[280px] sm:min-w-[350px] max-w-[350px] snap-start p-0 overflow-hidden flex flex-col`}>
-              <div className="relative w-full h-48 bg-slate-100 overflow-hidden">
-                <Image src="/certificates/tri1.png" alt="Sertifikat" fill className="object-fill" />
-              </div>
-              <div className="p-5 space-y-1 flex-1">
-                <span className={`${styles.badge} ${styles.badgeEmerald}`}>Volunteering</span>
-                <h4 className="text-base font-bold text-slate-800 line-clamp-1">Volunteer</h4>
-                <p className="text-xs text-slate-500">Issued by Trash Ranger Indonesia</p>
               </div>
             </div>
 
@@ -253,7 +244,58 @@ export default function Home() {
           </div>
         </div>
       </section>
-      
+
+      <section className={`${styles.section} ${styles.sectionGray}`}>
+        <div className="max-w-6xl mx-auto space-y-6">
+          <div className="space-y-2">
+            <h2 className="text-2xl md:text-3xl font-bold tracking-tight text-slate-800">Featured Projects</h2>
+            <div className="h-1 w-12 bg-teal-600 rounded-full"></div>
+          </div>
+
+          <div className="flex gap-6 overflow-x-auto pb-6 pt-2 scrollbar-thin snap-x snap-mandatory">
+            {projectsData.map((project) => (
+              <a 
+                href={project.link}
+                target="_blank" 
+                rel="noopener noreferrer"
+                key={project.id}
+                className={`${styles.card} group min-w-[290px] sm:min-w-[360px] max-w-[360px] snap-start p-0 overflow-hidden flex flex-col hover:shadow-lg hover:border-teal-500/30 transition-all duration-300 transform hover:-translate-y-1`}
+              >
+                {/* Image Section */}
+                <div className="relative w-full h-44 bg-slate-100 overflow-hidden">
+                  <Image 
+                    src={project.image} 
+                    alt={project.title} 
+                    fill 
+                    className="object-fill group-hover:scale-105 transition-transform duration-500" 
+                  />
+                </div>
+                <div className="p-5 flex-1 flex flex-col justify-between space-y-3">
+                  <div className="space-y-2">
+                    <h4 className="text-base font-bold text-slate-800 group-hover:text-teal-600 transition-colors">
+                      {project.title}
+                    </h4>
+                    <p className="text-xs text-slate-500 leading-relaxed">
+                      {project.description}
+                    </p>
+                  </div>
+                  <div className="flex flex-wrap gap-1.5 pt-2">
+                    {project.tech.map((techItem, index) => (
+                      <span 
+                        key={index} 
+                        className="text-[10px] font-medium text-teal-700 bg-teal-50/70 px-2 py-0.5 rounded border border-teal-100"
+                      >
+                        {techItem}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section className={styles.section}>
         <div className="max-w-6xl mx-auto space-y-6">
           <div className="space-y-2">
@@ -264,7 +306,7 @@ export default function Home() {
             <div className={`${styles.card} space-y-4`}>
               <h3 className="text-sm font-bold text-teal-600 tracking-wider uppercase">Technical & AI</h3>
               <div className="flex flex-wrap gap-2">
-                {['Python', 'Data Preprocessing', 'Data Annotation', 'Data Labelling', 'Content Evaluation', 'Feature Engineering', 'Machine Learning', 'Statistical Analysis', 'Model Evaluation','C++', 'Java', 'Deep Learning', 'Programming', 'Computer Vision', 'Natural Language Processing'].map((skill) => (
+                {['Python', 'Data Preprocessing', 'Data Annotation', 'Data Labelling', 'R', 'Content Evaluation', 'Feature Engineering', 'Machine Learning', 'Statistical Analysis', 'Model Evaluation','C++', 'Java', 'Deep Learning', 'Programming', 'Computer Vision', 'Natural Language Processing'].map((skill) => (
                   <span key={skill} className={styles.pill}>{skill}</span>
                 ))}
               </div>
@@ -295,11 +337,6 @@ export default function Home() {
                 <span className={`${styles.badge} ${styles.badgeAmber}`}>Winner</span>
                 <h4 className="text-lg font-bold text-slate-800">2nd Place, Web Design Competition</h4>
                 <p className="text-sm text-slate-500">IFFEST UNSRI 2024</p>
-              </div>
-              <div className={`${styles.card} space-y-2`}>
-                <span className="text-[10px] font-bold text-slate-500 tracking-wider uppercase bg-slate-100 px-2 py-0.5 rounded border border-slate-200">Contestant</span>
-                <h4 className="text-base font-bold text-slate-800">Rimau Robotic Contest 2025</h4>
-                <p className="text-xs text-slate-500">Sumo Robot Category — Sriwijaya University</p>
               </div>
             </div>
 

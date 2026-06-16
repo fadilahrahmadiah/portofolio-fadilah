@@ -409,12 +409,12 @@ export default function Home() {
               <span className="text-xs font-normal text-slate-400 mt-1">@fadilahrahmadiah</span>
             </a>
 
-            {/* <a href="https://wa.me/6285710018805" target="_blank" rel="noopener noreferrer" className={styles.contactCard}>
+            {/* <a href="https://wa.me/" target="_blank" rel="noopener noreferrer" className={styles.contactCard}>
               <div className={styles.contactIcon}>
                 <FaWhatsapp />
               </div>
               <span>WhatsApp</span>
-              <span className="text-xs font-normal text-slate-400 mt-1">+62 857-1001-8805</span>
+              <span className="text-xs font-normal text-slate-400 mt-1"></span>
             </a> */}
 
           </div>

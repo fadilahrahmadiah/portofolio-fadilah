@@ -79,7 +79,7 @@ export default function Home() {
           </div>
 
           <div className="space-y-6 md:col-span-2">
-            <h1 className={styles.titleName}>
+            <h1 className={`${styles.titleName} text-2xl sm:text-4xl md:text-5xl`}>
               Fadilah Rahmadiah's Portfolio
             </h1>
             <p className="text-lg md:text-xl text-slate-600 leading-relaxed">
@@ -121,7 +121,7 @@ export default function Home() {
             <div className="h-1 w-12 bg-teal-600 rounded-full"></div>
           </div>
 
-          <div className="flex gap-6 overflow-x-auto pb-6 pt-2 scrollbar-thin snap-x snap-mandatory">
+          <div className="flex flex-row gap-6 overflow-x-auto pb-6 pt-2 px-4 -mx-4 scrollbar-thin snap-x snap-mandatory w-full items-stretch">
             
             <div className={`${styles.card} min-w-[280px] sm:min-w-[350px] max-w-[350px] snap-start p-0 overflow-hidden flex flex-col`}>
               <div className="relative w-full h-48 bg-slate-100 overflow-hidden">
@@ -252,7 +252,7 @@ export default function Home() {
             <div className="h-1 w-12 bg-teal-600 rounded-full"></div>
           </div>
 
-          <div className="flex gap-6 overflow-x-auto pb-6 pt-2 scrollbar-thin snap-x snap-mandatory">
+          <div className="flex flex-row gap-6 overflow-x-auto pb-6 pt-2 px-4 -mx-4 scrollbar-thin snap-x snap-mandatory w-full items-stretch">
             {projectsData.map((project) => (
               <a 
                 href={project.link}

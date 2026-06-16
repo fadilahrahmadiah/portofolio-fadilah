@@ -172,6 +172,7 @@
   display: grid;
   grid-template-columns: repeat(1, minmax(0, 1fr));
   gap: 1rem;
+  justify-content: center;
   margin-top: 2.5rem;
 }
 
@@ -183,7 +184,7 @@
 
 @media (min-width: 1024px) {
   .contactGrid {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
 

@@ -314,7 +314,7 @@ export default function Home() {
             <div className={`${styles.card} space-y-4`}>
               <h3 className="text-sm font-bold text-teal-600 tracking-wider uppercase">Languages & Core Competencies</h3>
               <div className="flex flex-wrap gap-2">
-                {['Indonesian (Native)', 'English (Upper-Intermediate)', 'Attention to Detail', 'Analytical Thinking', 'Problem Solving', 'Leadership'].map((skill) => (
+                {['Indonesian (Native)', 'English (Fluent)', 'Attention to Detail', 'Analytical Thinking', 'Problem Solving', 'Leadership'].map((skill) => (
                   <span key={skill} className={styles.pill} style={{color: '#0f766e', backgroundColor: '#f0fdfa'}}>{skill}</span>
                 ))}
               </div>
@@ -409,13 +409,13 @@ export default function Home() {
               <span className="text-xs font-normal text-slate-400 mt-1">@fadilahrahmadiah</span>
             </a>
 
-            <a href="https://wa.me/6285710018805" target="_blank" rel="noopener noreferrer" className={styles.contactCard}>
+            {/* <a href="https://wa.me/6285710018805" target="_blank" rel="noopener noreferrer" className={styles.contactCard}>
               <div className={styles.contactIcon}>
                 <FaWhatsapp />
               </div>
               <span>WhatsApp</span>
               <span className="text-xs font-normal text-slate-400 mt-1">+62 857-1001-8805</span>
-            </a>
+            </a> */}
 
           </div>
         </div>
